@@ -1,4 +1,4 @@
-const request = require('./request.js');
+const request = require('./internals/request');
 
 request.send = function() {
     console.log('custom send function');
