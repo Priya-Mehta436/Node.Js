@@ -1,6 +1,10 @@
 const express = require('express');
 
-const app = express();
-app.use(express.json());
+const planetsRouter = require('./routes/planets/planets.router');
 
-module.exports = app; 
+const app = express();
+
+app.use(express.json());
+app.use(planetsRouter);
+
+module.exports = app;  
